@@ -7,17 +7,34 @@ else:
     print(" НОРМАЛЬНО ")
 
 
+n = int(input())
+c = False
+for i in range(n):
+    a = input()
+    if "Кот" in a or "кот" in a:
+        c = True
+        break
+if c:
+    print(" МЯУ ")
+else:
+    print(" НЕТ ")
 
 
-x = int(input())
-i = 1
-while i <= x:
-    i += 1
-    y = input()
-    if "Кот" in y or "кот" in y:
-        t = true
-        continue
-    if t == True:
-        print(" МЯУ ")
-    else:
-        print(" НЕТ ")
+slova = input()
+minx = slova
+maxx = slova
+y = "ДА"
+n = "НЕТ"
+while True:
+    slova = input()
+    if slova == "стоп":
+        if len(set(minx)) - set(maxx()) == 0:
+            print(n)
+            braek
+        else:
+            print(n)
+            break
+        if len(slova) > len(maxx):
+            maxx = slova
+        if len(slova) < len(minx):
+            minx = slova
